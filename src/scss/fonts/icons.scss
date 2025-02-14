@@ -1,0 +1,93 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+	&::before {
+		@extend %ic;
+	}
+}
+
+
+
+._icon-arrow-up:before {
+  content: "\e900";
+}
+._icon-doc-1:before {
+  content: "\e901";
+}
+._icon-doc-2:before {
+  content: "\e902";
+}
+._icon-email:before {
+  content: "\e903";
+}
+._icon-facebook:before {
+  content: "\e904";
+}
+._icon-instagram:before {
+  content: "\e905";
+}
+._icon-linkedin:before {
+  content: "\e906";
+}
+._icon-location:before {
+  content: "\e907";
+}
+._icon-phone-2:before {
+  content: "\e908";
+}
+._icon-phone-circle-1:before {
+  content: "\e909";
+}
+._icon-phone-retro-2:before {
+  content: "\e90a";
+}
+._icon-phone-retro-3:before {
+  content: "\e90b";
+}
+._icon-phone-retro-4:before {
+  content: "\e90c";
+}
+._icon-phone-square:before {
+  content: "\e90d";
+}
+._icon-quote-circle:before {
+  content: "\e90e";
+}
+._icon-quote-simple:before {
+  content: "\e90f";
+}
+._icon-quote-up-circle:before {
+  content: "\e910";
+}
+._icon-smartphone-2:before {
+  content: "\e911";
+}
+._icon-smartphone-circle-1:before {
+  content: "\e912";
+}
+._icon-square-x-twitter:before {
+  content: "\e913";
+}
+._icon-telegram:before {
+  content: "\e914";
+}
+._icon-tiktok:before {
+  content: "\e915";
+}
+._icon-wa:before {
+  content: "\e916";
+}
+._icon-x-twitter:before {
+  content: "\e917";
+}
+._icon-youtube:before {
+  content: "\e918";
+}
