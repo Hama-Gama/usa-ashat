@@ -1,3 +1,138 @@
 //====================================================================================================
 
 //====================================================================================================
+
+
+
+
+
+// CONTACTS 
+.contacts__container {
+
+}
+.section__title {
+}
+.contacts-container {
+}
+.contacts__head {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 40px 20px;
+}
+
+.contacts__head h2{
+	font-size: 30px;
+	line-height: 130%;
+	margin-bottom: 20px;
+}
+
+.contacts__head span{
+  font-weight: 700;
+}
+
+.contacts__head p{
+	font-size: 16px;
+  line-height: 1.5;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+.contacts__body {
+	background-color: #f2f2f2;
+	padding: 30px 15px;
+	display: flex;
+	justify-content: space-between;
+  flex-direction: column;
+	flex-wrap: wrap;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+@media (min-width:$mobile){
+	 .contacts__body{
+		 flex-direction: row;
+	 } 
+}
+
+.contact-item {
+	text-align: center;
+	padding: 15px 10px;
+	margin: 0 auto;
+}
+.contact-icon {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	font-size: 30px;
+  margin-right: 10px;
+	background-color: red;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+._icon-location {
+}
+.contact-info {
+	
+}
+.contact-info a{
+	@include adaptiveValue("font-size", 18, 16);
+	color: #000;
+	letter-spacing: 1px;
+}
+.contact-info h3{
+	font-size: 20px;
+	font-weight: 500;
+  line-height: 130%;
+	letter-spacing: 1px;
+	margin: toRem(15) toRem(0) toRem(5) toRem(0);
+}
+.contact-info p{
+	font-size: 18px;
+  line-height: 1.2;
+}
+
+
+
+
+// FOOTER ===========================================
+.footer {
+	background-color: #000;
+  padding: 15px;
+  text-align: center;
+	color: #fff;
+}
+.footer__container {
+}
+.footer__social {
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+	padding: 25px;
+	max-width: 460px;
+	margin: 0 auto;
+}
+._icon-facebook {
+}
+._icon-telegram {
+}
+._icon-instagram {
+}
+._icon-linkedin {
+}
+._icon-x-twitter {
+}
+
+.social-icon{
+	color: #fff;
+	font-size: 25px;
+}
+
+.footer-copy-rights {
+	font-size: 14px;
+	margin-top: 10px;
+	color: #b8b0b0;
+}

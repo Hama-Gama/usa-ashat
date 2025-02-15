@@ -1,1 +1,29 @@
 // Заголовки, общие БЄМ блоки и прочее...
+.section__title {
+	text-transform: uppercase;
+	font-weight: medium;
+	letter-spacing: 2px;
+	@include adaptiveValue("font-size", 24, 20);
+  text-align: center;
+  margin-bottom: toRem(30);
+	position: relative;
+}
+
+.section__title:after {
+		position: absolute;
+		content: '';
+		height: 2px;
+		bottom: -8px; 
+		margin: 0 auto;
+	  left: 0;
+		right: 0;
+	  width: 50%;
+  	background: #ff5566;
+	  /* optional animation */
+	  -o-transition:.5s;
+		-ms-transition:.5s;
+		-moz-transition:.5s;
+		-webkit-transition:.5s;
+		transition:.5s;
+}
+
