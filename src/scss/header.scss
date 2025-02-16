@@ -1,0 +1,146 @@
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: gray;
+	padding: toRem(10) toRem(0);
+	z-index: 5;
+	&._header-scroll{
+		position: fixed;
+		top: -200%;
+		background-color: #000;
+	}
+	&._header-show{
+		transition: top 0.3s ease 0s;
+		top: 0;
+	}
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
+	gap: toRem(30);
+	min-height: toRem(50);
+	padding: 0 toRem(20);
+	max-width: 1200px;
+	@media (max-width:$mobile){
+		  padding: 0 toRem(10);
+	}
+}
+.header__menu {
+	display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__menu a{
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	flex: 1 1 auto;
+}
+
+._icon-phone-retro-4 {
+	display: flex;
+	justify-content: center;
+	color: #FFF;
+	letter-spacing: toRem(2);
+	font-size: toRem(16);
+	padding: toRem(5);
+	gap: toRem(5);
+	transition: all 0.8s ease 0s;
+	&:hover {
+        color: orangered;
+    }
+		@media (max-width:$tablet){
+			display: none;
+		}
+}
+
+._icon-phone-circle-1 {
+	display: flex;
+	justify-content: center;
+	color: #FFF;
+	letter-spacing: toRem(2);
+	font-size: toRem(30);
+	padding: toRem(0) toRem(5) toRem(0) toRem(0);
+	gap: toRem(5);
+	transition: all 0.8s ease 0s;
+	&:hover {
+        color: orangered;
+    }
+		@media (min-width:$tablet){
+			 display: none; 
+		}
+}
+
+.menu__icon {
+	position: absolute;
+	right: 10px;
+}
+
+
+.menu__body {
+		@media (max-width:$mobile){
+		 padding: toRem(50) toRem(15);
+		 position: fixed;
+		 width: 100%;
+		 height: 100%;
+		 top: toRem(70);
+		 right: 100%;
+		 overflow: auto;
+		 background-color: #000;
+		 z-index: 4;
+		 transition: all 0.5s ease 0s; 
+		 &::before{
+			content: "";
+			position: fixed;
+			width: 100%;
+			height: toRem(50);
+			top: 0;
+			right: 100%;
+			z-index: 2;
+		 }
+		 .menu-open &{
+			right: 0;
+			&::before{
+				right: 0;
+			}
+		 }
+	}
+}
+
+
+.menu__list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	row-gap: toRem(5);
+	@include adaptiveValue("column-gap", 40, 30);
+	@media (max-width:$mobile){
+		 text-align: center;
+		 flex-direction: column;
+		 row-gap: toRem(60); 
+	}
+}
+.menu__item {
+}
+
+.menu__link {
+	color: #FFF;
+	font-size: toRem(16);
+	line-height: 150%;
+	letter-spacing: toRem(2);
+	transition: all 0.8s ease 0s;
+	&:hover{
+		color: orangered;
+	}
+	@media (max-width:$mobile){
+		 font-weight: 700; 
+		 text-transform: uppercase;
+		 font-size: toRem(24);
+	}
+}
