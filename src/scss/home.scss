@@ -3,6 +3,7 @@
 //====================================================================================================
 // HOME
 .home__content {
+	background-color: green;
 }
 .home__title {
 }
@@ -82,6 +83,144 @@
 	font-weight: 400;
 }
 
+
+
+//   FORM ======================================
+.home__form {
+	background-color: #ff5566;
+	color: #fff;
+	padding: 40px 15px 20px 15px;
+	max-width: 480px;
+	margin: 0 auto;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 0 0 14px 14px;
+}
+
+.form__title {
+	font-size: 24px;
+  text-align: center;
+  margin-bottom: 35px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.contact__form {
+	position: relative;
+}
+.contact__group {
+	display: grid;
+	row-gap: 2.5rem;
+}
+.contact__box {
+	position: relative;
+	width: 100%;
+	height: 58px;
+}
+.contact__input {
+	font-size: 20px;
+	outline: none;
+	border: none;
+}
+
+
+.contact__input{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+		background-color: #ff5566;
+	border: 2px solid #000;
+	color: #fff;
+	padding: .5rem 1rem;
+	font-size: 18px;
+	line-height: 1.5;
+	letter-spacing: 2px;
+	font-weight: 400;
+	transition: border .4s, background-color .4s;
+}
+
+.contact__input::placeholder{
+	color: #000;
+	transition: opacity .4s;
+}
+
+.contact__input:focus{
+  border: 2px solid #fff;
+}
+
+.contact__input:-webkit-autofill{
+	transition: background-color 6000s, color 6000s;
+}
+
+
+.contact__label {
+	position: absolute;
+	top: 8px;
+	left: 10px;
+	color: #fff;
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-weight: 400;
+		background-color: #ff5566;
+	padding: 8px;
+	pointer-events: none;
+	transition: top .4s, opacity .4s, background-color .4s;
+	opacity: 0;
+}
+
+.contact__form .contact__area{
+	height: 10rem;
+}
+
+
+.contact__area textarea{
+	resize: none;
+	padding-top: 1rem;
+}
+.contact__button {
+	background-color: #000;
+	cursor: pointer;
+	padding: 10px 30px;
+	width: fit-content;
+	border-radius: 10px;
+	color: #fff;
+	border: none;
+	letter-spacing: 1px;
+	font-weight: 500;
+	text-transform: uppercase;
+	transition: background-color 0.3s ease;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.contact__button:hover{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.form__button{
+	display: flex;
+	align-items: center;
+	justify-content: right;
+}
+
+.contact__input:focus::placeholder{
+	opacity: 0;
+}
+
+// Move label up & sticky label
+.contact__input:focus + .contact__label,
+.contact__input:not(:placeholder-shown).contact__input:not(:focus) + .contact__label
+{
+	opacity: 1;
+	top: -16px;
+}
+
+
+.button {
+}
 
 
 

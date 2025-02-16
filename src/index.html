@@ -19,6 +19,58 @@
 							</p>
 						</div>
 					</div>
+					<div class="home__form">
+						<h2 class="form__title">Book now</h2>
+						<form action="" class="contact__form" id="contact-form">
+							<div class="contact__group">
+								<!-- Name -->
+								<div class="contact__box">
+									<input type="text" name="user_name" class="contact__input" id="name" placeholder="Name" maxlength="25"  required />
+									<label for="name" class="contact__label">Name</label>
+								</div>
+                 <!-- Email -->
+								<div class="contact__box">
+									<input type="email" name="user_email" class="contact__input" id="email" placeholder="Email" maxlength="35" required />
+									<label for="email" class="contact__label">Email</label>
+								</div>
+								<!-- Phone -->
+								<!-- <div class="contact__box">
+									<input type="tel" 
+										name="user_phone" 
+										class="contact__input" 
+										id="phone" 
+										placeholder="Phone" 
+									/>
+									<label for="phone" class="contact__label">Phone</label>
+								</div> -->
+
+
+								 <div class="contact__box">
+										<input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="Тема">
+										<label for="subject" class="contact__label">Тема</label>
+                 </div>
+
+
+
+
+								<!-- Message (optional) -->
+								<div class="contact__box contact__area">
+										<textarea name="user_message" id="" class="contact__input"  maxlength="300"  required placeholder="Message (optional)"></textarea>
+										<label for="message" class="contact__label">Message</label>
+								</div>
+								
+
+								<div class="form__button">
+									<button type="submit" class="contact__button button">
+										 submit
+									</button>
+
+									<p id="contact-message"></p>
+								</div>
+
+							</div>
+						</form>
+					</div>
 				</section>
 
 				<section class="services">
