@@ -38,7 +38,7 @@ function initSliders() {
 			observeParents: true,
 			slidesPerView: 1.2,
 			spaceBetween: 15,
-			autoHeight: true,
+			autoHeight: false,
 			speed: 800,
 
 			//touchRatio: 0,
@@ -86,15 +86,15 @@ function initSliders() {
 					autoHeight: true,
 				},
 				768: {
-					slidesPerView: 2.5,
+					slidesPerView: 1.2,
 					spaceBetween: 20,
 				},
 				992: {
-					slidesPerView: 3.5,
+					slidesPerView: 2.2,
 					spaceBetween: 20,
 				},
 				1268: {
-					slidesPerView: 3.5,
+					slidesPerView: 2.2,
 					spaceBetween: 30,
 				},
 			},

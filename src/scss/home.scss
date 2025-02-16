@@ -90,7 +90,7 @@
   height: 100%;
   object-fit: cover;
 	border-radius: 10px;
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .swiper-pagination {
 }
@@ -118,14 +118,38 @@
 .reviews__slide {
 }
 
-
 .review__card {
-	background-color:#b8b0b0;
 	padding: 20px;
-	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
+	height: 100%;
+}
+
+.review__item::after{
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+	bottom: 0;
+  width: 100%;
+  height: 92%;
+	background-image: url("@img/reviews/bg-review-3.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: -1;
+  border-radius: 15px;
+	opacity: 0.8;
+}
+
+// .swiper {
+//   width: 100%;
+//   height: 100%;
+// }
+
+.swiper .swiper-slide {
+  height: auto;
 }
 
 .review__img img{
@@ -146,7 +170,7 @@
 .review__text {
 	margin-bottom: 20px;
 	font-size: 16px;
-	line-height: 1.2;
+	line-height: 1.4;
 	letter-spacing: 1px;
 	font-weight: 400;
 	color: #fff;
@@ -162,10 +186,9 @@
 }
 
 .swiper-slide {
-	// background-color: gray;
-	display: flex;
 	padding: 10px 0px 40px 0;
 }
+
 .swiper-pagination {
 }
 .swiper-button-prev {
