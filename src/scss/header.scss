@@ -84,10 +84,10 @@
 
 .menu__body {
 		@media (max-width:$mobile){
-		 padding: toRem(50) toRem(15);
+		 padding: toRem(40) toRem(15);
 		 position: fixed;
 		 width: 100%;
-		 height: 40%;
+		 height: fit-content;
 		 width: 250px;
 		 top: toRem(70);
 		 left: 100%;
@@ -128,14 +128,14 @@
 		 flex-direction: column;
 		 row-gap: toRem(40); 
 		//  text-align: right;
-		 margin-right: 15px;
+		//  margin-right: 15px;
 	}
 }
 .menu__item {
 }
 
 .menu__link {
-	color: #FFF;
+	color: hsl(0, 0%, 100%);
 	font-size: toRem(16);
 	line-height: 150%;
 	letter-spacing: toRem(2);
@@ -149,3 +149,4 @@
 		 font-size: toRem(16);
 	}
 }
+

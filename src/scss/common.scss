@@ -2,7 +2,7 @@
 ._title {
 	padding-top: 15px;
 	text-transform: uppercase;
-	font-weight: medium;
+	font-weight: 500;
 	letter-spacing: 2px;
 	@include adaptiveValue("font-size", 24, 20);
   text-align: center;
@@ -34,3 +34,29 @@
 	 } 
 }
 
+.menu-book{
+	border-radius: 25px;
+	background-color: hsl(354, 100%, 66.67%);
+	display: block;
+	padding: 0.1rem 1rem;
+	transition: all 0.5s;
+	@media (any-hover: hover){
+		&:hover{
+			background-color: hsl(354, 100%, 70.67%);
+		}
+	}
+}
+
+@media (max-width:$mobile){
+	.menu-book{
+		padding: 0.5rem 2rem;
+	}
+}
+
+li:first-child a {
+	@media (any-hover: hover){
+		&:hover{
+			color: hsl(0, 0%, 100%);
+		}
+	}
+}
